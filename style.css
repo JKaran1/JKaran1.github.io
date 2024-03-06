@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(93, 176, 176);
+    background-color: rgb(35, 59, 80);
     font-size: 12pt;
     font-family: Arial;
     margin: 10pt;
@@ -8,6 +8,32 @@ body{
 .class2 A:visited {text-decoration: underline overline}
 .class2 A:active {font-size: 50px; font-weight:bold; color: red;}
 .class2 A:hover {font-size: 30px; text-decoration: underline; color: green;}
+
+.wrapper-main{
+    width: 90%;
+    margin: 10px auto;
+}
+
+#sidebar1{
+    background-color: rgb(108, 148, 184);
+    min-height: 1000px;
+    float: left;
+    width: 200px;
+}
+
+#column1{
+    background-color: rgb(190, 206, 220);
+    min-height: 1000px;
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+#sidebar2{
+    background-color: rgb(108, 148, 184);
+    min-height: 1000px;
+    float: right;
+    width: 300px;
+}
 
 .parent {
     border: 5px outset rgb(0, 106, 255);
@@ -20,12 +46,12 @@ body{
     vertical-align: middle;
 }
 .image{
-    height: 20%;
-    width: 20%;
+    height: 40%;
+    width: 40%;
 }
 .big-image {
-    height:80%;
-    width: 80%; 
+    height:100%;
+    width: 100%; 
 }
 
 header{
@@ -106,6 +132,13 @@ h4{
     font-size: 16px;
     font-family: Arial;
     margin-left: 50px;
+}
+h5{
+    color: rgb(26, 25, 29);
+    font-size: 15px;
+    font-family: Arial;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 li{
     color: rgb(67, 59, 60);

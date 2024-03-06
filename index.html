@@ -22,7 +22,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#">Places ▾</a>
+                <a href="#">Places I Want To Vist ▾</a>
                 <ul class="dropdown">
                     <li><a href="#">Germany</a></li>
                     <li><a href="#">Australia</a></li>
@@ -33,22 +33,89 @@
         </nav>
     </header>
     <main>
-        <p> CLICK IMAGE</p>
-        <img src="IMG_3301.jpeg" alt="Pic Of Me" class = "image" id="image1" onclick="makeBigger(this)">
-        
-        <h2>Education</h2>  
-        <h4>Where I got my past education from</h4>
-        <ol>  
+     <div class = "wrapper-main">
+        <div id="sidebar1">
+         <p> CLICK IMAGES</p>
+         <img src="IMG_3301.jpeg" alt="Pic Of Me" class = "image" id="image1" onclick="makeBigger(this)">
+         <img src="funny.jpeg" alt="Pic Of Me" class = "image" id="image1" onclick="makeBigger(this)">
+        </div>
+        <div id="sidebar2">
+            <form id="myform">
+                <h1>
+                    SURVEY
+                </h1>
+                <h2>
+                    What is your name
+               </h2>
+               <h3>
+                  <input id="username" type="text" value="abc"> 
+               </h3>
+               <h2>
+                    Check the classes you are in
+               </h2>
+               <h4>
+                  <input type="checkbox"> ITM780
+                  <input type="checkbox"> ITM706
+                  <input type="checkbox"> ECN204
+                  <input type="checkbox"> ITM820
+               </h4>
+               <h2>
+                What program are you in
+               </h2> 
+               <h4>
+                  <input type="radio" value="A" name="choice"> BTM
+                  <input type="radio" value="B" name="choice"> BM
+                  <input type="radio" value="C" name="choice"> Other
+               </h4>
+               <h3>
+                    What is your favourite color
+                    <input type="color" name="favcolor" value="#ff0000" id="colorpicker"> 
+               </h3>
+               <h3> What is your favourite car
+                <select name="cars">
+                 <option value="volvo">Volvo</option>
+                 <option value="benz">Mercedes-Benz</option>
+                 <option value="honda">Honda</option>
+                 <option value="volkswagen">Volkswagen</option>
+                 <option value="Bmw">Bmw</option>
+                 <option value="Tesla">Tesla</option>
+                 <option value="Audi">Audi</option>
+                </select>
+                <textarea name="message" rows="7" cols="30">
+                   Tell me about yourself
+                </textarea>
+               </h3>
+               <input type="text" id="myinput" oninput="inputHandler()">
+               <h5 id="emptyParagraph">Type something above </h5>
+               <fieldset>
+                <legend>FIELDSET:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </fieldset>
+              <p>
+                <input type="submit" value="Submit">
+                <input type="reset">
+                <input type="button" onclick="alert('$$$$$You Won 1 MILLION DOLLARS$$$$$ Please send your SIN# for proof of virification')" value="Prize Draw">
+              </p>
+            </form>
+        </div>
+        <div id="column1">
+         <h2>Education</h2>   
+         <h4>Where I got my past education from</h4>
+         <ol>  
             <li>Walnut Grove Public School</li>
             <blockquote>- 2014-2017</blockquote>
             <li>CastleBrooke Secondary School</li>
             <blockquote>- 2017-2021</blockquote>  
             <li>Toronto Metropolition University</li>
             <blockquote>- 2021-2025</blockquote> 
-        </ol>
-
-        <h2>My Program</h2>
-        <dl>
+         </ol>
+        
+         <h2>My Program</h2>
+         <dl>
             <h4>What I am studying and what I've found most usefull</h4>  
             <dt> Business Technology Management (BTM Major) </dt>
                 <dd>BTM focuses on the Technology side of business and opens up many oppurtunities in the IT field.</dd>    
@@ -56,36 +123,23 @@
                 <dd> &nbsp; </dd>  
             <dt> Computer Science (CS Minor) </dt>    
                 <dd> CPS 109 &amp; CPS209 are introductry courses into Python and Java which I highly recommend taking, even if your arent doing the minor.</dd>  
-        </dl>
-
-        <h2> Skills &amp; Extra Curriculars</h2>
-        <ul>  
+         </dl>
+         <h2> Skills &amp; Extra Curriculars</h2>
+         <ul>  
             <li>Python</li>  
             <li>Java</li>
             <li>IBM SPSS</li>
             <li>SQL</li>
             <li>Microsoft Office Tools</li>
             <li>Microsoft Excel Bootcamp</li>
-        </ul>
+         </ul>
+        </div>
+        
+        
+     </div>
     </main>
     <hr>
-    <span class="class2">
-    <div class='parent'>
-        <div class='child'>
-            <a href="http://www.linkedin.com/in/karan-johal-aa469a240">linkedin</a> <br>
-        </div>
-        <div class='child'>
-            <p>This is my Linkedin</p>
-        </div>
-    </div>
-    <div class='parent'>
-        <div class='child'>
-            <a href="https://www.instagram.com/j_karan12/">Instagram</a> <br>
-        </div>
-        <div class='child'>
-            <p>This is my instagram</p>
-        </div>
-    </div>
+   
     <hr>
     <div>  
         <strong> The Website about Karan </strong>
