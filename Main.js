@@ -1,16 +1,44 @@
 
 function getname(){
     var username = prompt("what is your name"," ");
-    document.getElementById("welcomeMessage").innerHTML = username + " This is Lab 5";
+    document.getElementById("welcomeMessage").innerHTML = username + " This is Lab 8";
 }
 
 function makeBigger(element){
     element.classList.toggle("big-image");
 }
 
+function changemysize(myvalue) {
+    var div = document.getElementById("column1");
+    div.style.fontSize = myvalue + "px";   
+}
+function changeFont(element){
+    element.style.fontFamily="Courier New";
+    for(var i=0; i < element.children.length; i++){
+        changeFont(element.children[i]);
+    }
+}
+changeFont(document.getElementsByTagName("body")[0]);
+
+var colorPicker = document.getElementById("colorPicker");
+colorPicker.addEventListener("change", function() {
+    document.div.style.backgroundColor = colorPicker.value;
+});
+
 function myFunctionclick() {
     document.getElementById("navbar").classList.toggle("show"); 
 }
+
+var toggleButton = document.getElementById("toggle-high-contrast");
+
+// Add a click event listener to the toggle button
+toggleButton.addEventListener("click", function() {
+    // Get the body element
+    var body = document.getElementsByTagName("body")[0];
+    // Toggle the "high-contrast" class on the body element
+    body.classList.toggle("high-contrast");
+});
+
 /*
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {

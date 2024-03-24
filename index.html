@@ -32,15 +32,24 @@
             </ul>
         </nav>
     </header>
-    <main>
-     <div class = "wrapper-main">
+    <main id= "mainid" class = "mainid">
+     <div id= "wrapper-main" class = "wrapper-main">
         <div id="sidebar1">
          <p> CLICK IMAGES</p>
-         <img src="IMG_3301.jpeg" alt="Pic Of Me" class = "image" id="image1" onclick="makeBigger(this)">
-         <img src="funny.jpeg" alt="Pic Of Me" class = "image" id="image1" onclick="makeBigger(this)">
+         <img src="IMG_3301.jpeg" alt="Picture of my dog laying" class = "image" id="image1" onclick="makeBigger(this)">
+         <img src="funny.jpeg" alt="Picture of me forcing my dog to hug me" class = "image" id="image1" onclick="makeBigger(this)">
         </div>
         <div id="sidebar2">
             <form id="myform">
+                <h1>
+                    Accesibility Settings
+                </h1>
+                <div >
+                    <font size="2"><a href="javascript:void(0);" onclick="changemysize(25);">A</a></font>
+                    <font size="4"><a href="javascript:void(0);" onclick="changemysize(50);">A</a></font>
+                    <font size="5"><a href="javascript:void(0);" onclick="changemysize(100);">A</a></font>
+                    <button id="toggle-high-contrast">Toggle High Contrast</button>
+                </div>
                 <h1>
                     SURVEY
                 </h1>
@@ -102,7 +111,7 @@
               </p>
             </form>
         </div>
-        <div id="column1">
+        <div id="column1" class="column1">
          <h2>Education</h2>   
          <h4>Where I got my past education from</h4>
          <ol>  
@@ -133,6 +142,9 @@
             <li>Microsoft Office Tools</li>
             <li>Microsoft Excel Bootcamp</li>
          </ul>
+         <label for="colorPicker">Choose a background color:</label>
+         <input type="color" id="colorPicker">
+         
         </div>
         
         

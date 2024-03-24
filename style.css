@@ -4,6 +4,11 @@ body{
     font-family: Arial;
     margin: 10pt;
 }
+.high-contrast {
+    color: #fff;
+    background-color: #000;
+}
+
 .class2 A:link {text-decoration: underline}
 .class2 A:visited {text-decoration: underline overline}
 .class2 A:active {font-size: 50px; font-weight:bold; color: red;}
@@ -53,6 +58,7 @@ body{
     height:100%;
     width: 100%; 
 }
+
 
 header{
     margin: 0px;
